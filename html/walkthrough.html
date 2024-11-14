@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&family=Lato&family=Montserrat&family=Merriweather&family=Playfair+Display&family=Fira+Code&family=Source+Code+Pro&display=swap" rel="stylesheet">
+      </head>
+      
+      <body>
+        <nav id="nav-bar">
+          <ul id="nav-list">
+            <li><a class="nav-link" href="portfolio-repo/html/index.html">Home</a></li>
+            <li><a class="nav-link" href="portfolio-repo/html/projects.html">Projects</a></li>
+          <li><a class="nav-link" href="portfolio-repo/html/about.html">About</a></li>
+          </ul>
+        </nav>
+        <h1 id="logic-header">Logic Walk Through</h1>
+        <main id="walk-page">
+          <div id="walk-page-left" class="">
+            <pre><p><span id="article-header">Can It Palindrome?</span>
+            <span id="article-intro">
+      This program takes an input from the user, cleans it by removing non-alphabetical characters and converting it to lowercase, and then checks if the cleaned input reads the same forwards and backwards. Let's me break it down for you!</span></span>
+            </pre>
+            <pre><p class="plain-text">
+      
+      <span class="sub-header">Function 1: `cleanText(inputText)`</span>
+      
+      The `cleanText` function is responsible for preparing the user's input for the palindrome check. It performs two main tasks:
+      
+      1. Lowercasing the input: `.toLowerCase()` converts all the characters in the string to lowercase, ensuring the check is case-insensitive.
+      2. Removing non-alphabetical characters: `.replace(/[^a-zA-Z]/g, "")` uses a regular expression to remove any characters that are not letters (a-z or A-Z). This means spaces, punctuation, and numbers are ignored during the check.
+      
+      <span class="sub-header">Function 2: `isValid()`</span>
+      
+      The `isValid` function checks if the user has entered any text in the input field. If the input is empty (`""`), it returns `false`; otherwise, it returns `true`.
+      This ensures that the palindrome check only happens when the user has provided some input, and prevents unnecessary checks when the input field is empty.
+      
+      
+      <span class="sub-header">Function 3: `isPalindrome()`</span>
+      
+      The `isPalindrome` function is the heart of the program. It performs the actual check to determine whether the input string is a palindrome.
+      
+      1. Validation: It first checks if the input is valid by calling `isValid()`. If the user hasn’t entered any text, it alerts them to provide an input.
+         
+      2. Cleaning the Input: If the input is valid, the function uses the `cleanText` function to remove any non-alphabetical characters and convert the input to lowercase.
+      
+      3. Reversing the Input: The function then reverses the cleaned input string. It does this by:
+         - Splitting the string into an array of characters with `.split("")`.
+         - Reversing the array with `.reverse()`.
+         - Joining the array back into a string with `.join("")`.
+      
+      4. Comparison: The function compares the cleaned, reversed input with the original cleaned input:
+         - If they are the same, it displays a message saying the input is a palindrome.
+         - If they are different, it displays a message saying the input is not a palindrome.
+      
+      <span class="sub-header">Event Listener</span>
+      
+      The checkBtn is assigned an event listener to the "Check" button (`checkBtn`). When the button is clicked, it triggers the `isPalindrome` function, which checks if the user’s input is a palindrome and updates the result.
+            </p></pre>
+            </h>
+          </div>
+          <div id="walk-page-right" class="">
+            <p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="oNKErrK" data-pen-title="Palindrome" data-user="LLGreene" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+              <span>See the Pen <a href="https://codepen.io/LLGreene/pen/oNKErrK">
+                  Palindrome</a> by LLGreene (<a href="https://codepen.io/LLGreene">@LLGreene</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <pre><p class="plain-text">
+              <span class="sub-header">Complete Flow</span>
+      
+      1. The user types something into the input field.
+      2. The user clicks the "Check" button.
+      3. The script validates the input, cleans it, and checks if it’s a palindrome.
+      4. The result is displayed on the page, telling the user whether or not their input is a palindrome.
+      
+      <span class="sub-header">Takeaway</span>
+      
+      This JavaScript palindrome checker is a simple yet effective demonstration of input validation, string manipulation, DOM manipulation, and event handling string methods, event-driven programming in JavaScript. By cleaning the input (removing spaces, punctuation, and case differences) and checking if it reads the same forward and backward, the program ensures that the user can check if their input is a palindrome, regardless of how it's formatted.
+            </p></pre>
+            <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+          </div>
+        </main>
+      </body>
+</html>

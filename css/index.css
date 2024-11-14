@@ -1,0 +1,145 @@
+:root {
+    --soft-blue: #007bff;
+    --coder-pink: #ff69b4;
+    --deep-blue: #003366;
+    --emerald-green: #2e8b57;
+    --vibrant-orange: #ffa500;
+    --light-grey: #efe8e8;
+    --dark-grey: #333333;
+    --black: #000000;
+    --light-red: rgba(130, 29, 22, 0.9);
+    --dark-red: rgb(130, 29, 22);
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    font-size: 62.5%;
+    font-family: "Montserrat";
+  }
+  #homepage {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+  }
+  #homepage-left {
+    padding: 20px;
+    width: 60vw;
+    text-align: center;
+    background-color: var(--light-grey);
+  }
+  #nav-bar {
+    display: block;
+  }
+  #nav-list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    font-size: 1.7rem;
+  }
+  .nav-link {
+    text-decoration: none;
+    color: var(--dark-grey);
+    font-weight: 500;
+  }
+  .nav-link:hover {
+    color: black;
+    font-weight: 600;
+  }
+  #nav-list li {
+    list-style-type: none;
+  }
+  #homepage-header {
+    font-size: 7rem;
+    font-weight: 650;
+    margin: 12vh auto;
+  }
+  #portfolio-header {
+    font-size: 3rem;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 2rem;
+  }
+  #name-header {
+    font-family: "Playfair Display";
+  }
+  #homepage-subheader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #homepage-subheader * {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  #professional-title {
+    width: 60%;
+  }
+  #email-me {
+    width: 40%;
+  }
+  #email-me-text {
+    padding-bottom: 0.5rem;
+    text-decoration: none;
+    border-bottom: 2px solid black;
+    color: black;
+  }
+  #email-me-text:hover {
+    font-weight: 600;
+    cursor: pointer;
+  }
+  #email-me-text:clicked {
+    color: black;
+  }
+  #homepage-right {
+    width: 40vw;
+    background: url("https://media1.giphy.com/media/JoVV55m3KZHdxlpFZ6/200w.gif?cid=6c09b952zwazue37lbpkqanfclwudongt90xsi2fzr5rpm7s&ep=v1_gifs_search&rid=200w.gif&ct=g")
+      repeat;
+    background-size: 100%;
+    background-position: 50% 50%;
+  }
+  /* Responsive */
+  @media (max-width: 800px) {
+    #homepage {
+      background: url("https://media1.giphy.com/media/JoVV55m3KZHdxlpFZ6/200w.gif?cid=6c09b952zwazue37lbpkqanfclwudongt90xsi2fzr5rpm7s&ep=v1_gifs_search&rid=200w.gif&ct=g")
+        repeat;
+      background-size: 100%;
+      background-position: 50% 50%;
+    }
+    #homepage-left {
+      width: 90vw;
+      height: 90vh;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 2rem 2rem 5rem 2rem;
+    }
+    .nav-link {
+      font-size: 1.2rem;
+    }
+    #portfolio-header,
+    #homepage-subheader * {
+      font-size: 1.5rem;
+    }
+    #homepage-subheader {
+      display: flex;
+      flex-direction: column;
+    }
+    #professional-title {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+    #name-header {
+      font-size: 4rem;
+      display: block;
+    }
+    .hidden {
+      display: none;
+    }
+  }
+  
