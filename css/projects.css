@@ -46,9 +46,11 @@
     font-weight: 500;
   }
   .nav-link:hover {
-    color: black;
     font-weight: 700;
     cursor: pointer;
+  }
+  .nav-link:hover, .nav-link:visited, .nav-link:active {
+    color: black;
   }
   #nav-list li {
     list-style-type: none;

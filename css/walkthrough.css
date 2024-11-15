@@ -42,6 +42,9 @@
     font-weight: 600;
     font-size: 1.8rem;
   }
+  .nav-link:hover, .nav-link:visited, .nav-link:active {
+    color: black;
+  }
   #nav-list li {
     list-style-type: none;
   }
