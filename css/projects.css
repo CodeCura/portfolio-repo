@@ -42,14 +42,13 @@
   }
   .nav-link {
     text-decoration: none;
-    color: var(--dark-grey);
     font-weight: 500;
   }
   .nav-link:hover {
     font-weight: 700;
     cursor: pointer;
   }
-  .nav-link:hover, .nav-link:visited, .nav-link:active {
+  .nav-link, .nav-link:hover, .nav-link:visited, .nav-link:active {
     color: black;
   }
   #nav-list li {
