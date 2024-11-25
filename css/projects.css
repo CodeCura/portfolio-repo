@@ -75,7 +75,14 @@
     border: 2px solid black;
     margin-bottom: 20px;
   }
+  .project-link{
+    text-decoration: none;
+    color:white;
+    font-size:2rem;
+    margin-bottom:3rem;
+  }
   @media (max-width: 800px) {
+
     #projects-list {
       flex-direction: column;
     }
