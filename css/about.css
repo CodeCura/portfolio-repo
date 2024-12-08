@@ -128,13 +128,20 @@ body {
   color:var(--vibrant-orange);
 }
 .paragraph-subheader {
+  display:inline-block;
+  margin:1rem auto;
   font-size: 2rem;
   font-weight: 600;
-  margin-bottom: 1rem;
+  color:var(--emerald-green);
+  border-bottom:2px solid var(--vibrant-orange);
+  text-align: center;
 }
 
 @media (max-width: 800px) {
   .paragraph {
     font-size: 1.5rem;
+  }
+  .paragraph-subheader {
+    font-size: 1.6rem;
   }
 }
