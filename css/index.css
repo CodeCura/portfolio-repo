@@ -33,6 +33,7 @@ html {
 }
 #nav-bar {
   display: block;
+  margin-top: 2rem;
 }
 #nav-list {
   display: flex;
@@ -145,7 +146,10 @@ margin-left:3px;
     padding: 2rem 2rem 5rem 2rem;
   }
   .nav-link {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+  }
+  #homepage-header{
+    margin-top:9vh;
   }
   #portfolio-header,
   #homepage-subheader * {

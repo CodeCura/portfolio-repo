@@ -25,7 +25,12 @@
   #nav-bar,
   #logic-header {
     display: block;
+  }
+  #logic-header {
     margin: 2rem auto 4rem auto;
+  }
+  #nav-bar{
+    margin:4rem auto;
   }
   #nav-list {
     display: flex;

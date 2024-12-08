@@ -30,8 +30,7 @@
   }
   #nav-bar {
     display: block;
-    margin: 2rem auto;
-    padding-bottom: 2rem;
+    margin: 3rem auto;
   }
   #nav-list {
     display: flex;
@@ -83,7 +82,9 @@
   }
   
   @media (max-width: 800px) {
-
+    #nav-bar{
+      margin-top:4rem;
+    }
     #projects-list {
       flex-direction: column;
     }

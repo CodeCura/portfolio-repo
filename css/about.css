@@ -28,11 +28,11 @@
   }
   body {
     background-color: var(--light-grey);
+    padding-bottom:6rem;
   }
-  #nav-bar,
-  #logic-header {
+  #nav-bar {
     display: block;
-    margin: 2rem auto 4rem auto;
+    margin: 4rem auto;
   }
   #nav-list {
     display: flex;
