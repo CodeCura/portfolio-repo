@@ -1,131 +1,140 @@
 @font-face {
-    font-family: "Rustic Printed"; /* The name you'll use in CSS */
-    src: url("fonts/rustic-printed.woff2") format("woff2"),
-      url("fonts/rustic-printed.woff") format("woff");
-    /* Add more formats as needed for compatibility */
-    /*GLOBAL SELECTORS AND RESET*/
-  }
-  :root {
-    --soft-blue: #007bff;
-    --coder-pink: #ff69b4;
-    --deep-blue: #003366;
-    --emerald-green: #2e8b57;
-    --vibrant-orange: #ffa500;
-    --light-grey: #efe8e8;
-    --dark-grey: #333333;
-    --black: #000000;
-    --light-red: rgba(130, 29, 22, 0.9);
-    --dark-red: rgb(130, 29, 22);
-  }
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  html {
-    font-size: 62.5%;
-    font-family: "Montserrat";
-  }
-  body {
-    background-color: var(--light-grey);
-    padding-bottom:6rem;
-  }
-  #nav-bar {
-    display: block;
-    margin: 4rem auto;
-  }
-  #nav-list {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-around;
-    font-size: 1.7rem;
-  }
-  .nav-link {
-    text-decoration: none;
-    font-weight: 500;
-  }
-  .nav-link:hover {
-    font-weight: 600;
-    font-size: 1.8rem;
-  } 
-  .nav-link, .nav-link:hover, .nav-link:visited, .nav-link:active {
-    color: black;
-  }
-  #nav-list li {
-    list-style-type: none;
-  }
-  #main-section {
-    width: 70vw;
-    margin: 2rem auto;
-  }
-  #page-header {
-    font-weight: normal;
-    text-align: center;
-    font-size: 4rem;
-    margin-bottom: 3rem;
-  }
+  font-family: "Rustic Printed"; /* The name you'll use in CSS */
+  src: url("fonts/rustic-printed.woff2") format("woff2"),
+    url("fonts/rustic-printed.woff") format("woff");
+  /* Add more formats as needed for compatibility */
+  /*GLOBAL SELECTORS AND RESET*/
+}
+:root {
+  --soft-blue: #007bff;
+  --coder-pink: #ff69b4;
+  --deep-blue: #003366;
+  --emerald-green: #2e8b57;
+  --vibrant-orange: #ffa500;
+  --light-grey: #efe8e8;
+  --dark-grey: #333333;
+  --black: #000000;
+  --light-red: rgba(130, 29, 22, 0.9);
+  --dark-red: rgb(130, 29, 22);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat";
+}
+body {
+  background-color: var(--light-grey);
+  padding-bottom: 6rem;
+}
+#nav-bar {
+  display: block;
+  margin: 4rem auto;
+}
+#nav-list {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  font-size: 1.7rem;
+}
+.nav-link {
+  text-decoration: none;
+  font-weight: 500;
+}
+.nav-link:hover {
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+.nav-link,
+.nav-link:hover,
+.nav-link:visited,
+.nav-link:active {
+  color: black;
+}
+#nav-list li {
+  list-style-type: none;
+}
+#main-section {
+  width: 70vw;
+  margin: 2rem auto;
+}
+#introduction {
+  font-weight: normal;
+  text-align: center;
+  margin-top: 6rem;
+}
+.intro {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.full-name {
+  font-size: 5rem;
+  color: var(--vibrant-orange);
+  font-weight: 600;
+  margin-top: 1.5rem;
+}
+#last-name,
+.intro {
+  color: var(--emerald-green);
+}
+.icon-links {
+  width: 50vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+.icon-link {
+  color: var(--emerald-green);
+}
+.icon-link:hover {
+  color: var(--vibrant-orange);
+}
+.top-links {
+  font-size: 3rem;
+}
+.top-links .icon-link:hover {
+  color: var(--vibrant-orange);
+  font-size: 3.5rem;
+}
+.bottom-links {
+  font-size: 4rem;
+}
+.bottom-links .icon-link:hover {
+  color: var(--vibrant-orange);
+  font-size: 4.5rem;
+}
+
+.paragraph {
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+.paragraph-header {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 3rem 0 1rem 0;
+  color:var(--emerald-green);
+}
+#chat, #unique{
+  color:var(--vibrant-orange);
+}
+.paragraph-subheader {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 800px) {
   .paragraph {
-    font-size: 1.8rem;
-    letter-spacing: 0.1rem;
-    line-height: 1.5;
-    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
   }
-  footer,
-  #icon-links {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-  }
-  footer {
-    display:none;
-    background-color: black;
-    padding: 2rem auto;
-  }
-  #icon-links {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    font-size: 3rem;
-    padding: 2rem;
-  }
-  .icon-link {
-    color: var(--soft-blue);
-  }
-  .icon-link:hover {
-    color: var(--coder-pink);
-    font-size: 3.5rem;
-  }
-  #email-me {
-    display: block;
-    width: 100%;
-    margin: 4rem auto;
-    text-align: center;
-  }
-  #email-me-anchor {
-    padding-bottom: 0.5rem;
-    text-decoration: none;
-    border-bottom: 2px solid black;
-    font-size: 2.5rem;
-    color: black;
-  }
-  #email-me-anchor:hover {
-    font-size: 2.8rem;
-    font-weight: 600;
-    cursor: pointer;
-  }
-  #email-me-text:clicked {
-    color: black;
-  }
-  @media (max-width: 800px) {
-    .paragraph {
-      font-size: 1.5rem;
-    }
-    #email-me-anchor {
-      font-size: 2rem;
-    }
-    #email-me-anchor:hover {
-      font-size: 2.2rem;
-    }
-  }
-  
+}
