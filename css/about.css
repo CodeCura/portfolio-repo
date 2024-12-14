@@ -76,14 +76,14 @@ body {
   font-size: 5rem;
   color: var(--vibrant-orange);
   font-weight: 600;
-  margin-top: 1rem;
+  margin: 1rem 0 2rem 0;
 }
 #last-name,
 .intro {
   color: var(--emerald-green);
 }
 .icon-links {
-  width: 50vw;
+  width: 40vw;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -144,6 +144,9 @@ body {
       repeat;
     padding:20px;
   }
+  .intro{
+    font-size: 2.8rem;
+  }
   body{
     padding-top: 8px;
   }
@@ -152,5 +155,8 @@ body {
   }
   .paragraph-subheader {
     font-size: 1.6rem;
+  }
+  .bottom-links .icon-link{
+    font-size: 3rem;
   }
 }
