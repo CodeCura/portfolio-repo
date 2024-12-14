@@ -114,9 +114,23 @@
     white-space: pre-wrap;
   }
   @media (max-width: 800px) {
-    
+    html {
+      background: url("https://media1.giphy.com/media/JoVV55m3KZHdxlpFZ6/200w.gif?cid=6c09b952zwazue37lbpkqanfclwudongt90xsi2fzr5rpm7s&ep=v1_gifs_search&rid=200w.gif&ct=g")
+        repeat;
+      padding:20px;
+    }
+    body{
+      padding-top: 8px;
+      background-color: var(--light-grey);
+    }
+    #walk-page{
+      overflow: scroll;
+      padding-bottom: 20px;
+    }
     #walk-page {
       flex-direction: column;
+      width:90vw;
+      margin: 0 auto;
     }
     #walk-page-left,
     #walk-page-right {

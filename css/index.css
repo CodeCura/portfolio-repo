@@ -133,8 +133,6 @@ margin-left:3px;
   #homepage {
     background: url("https://media1.giphy.com/media/JoVV55m3KZHdxlpFZ6/200w.gif?cid=6c09b952zwazue37lbpkqanfclwudongt90xsi2fzr5rpm7s&ep=v1_gifs_search&rid=200w.gif&ct=g")
       repeat;
-    background-size: 100%;
-    background-position: 50% 50%;
   }
   #homepage-left {
     width: 90vw;
