@@ -16,6 +16,8 @@
   --black: #000000;
   --light-red: rgba(130, 29, 22, 0.9);
   --dark-red: rgb(130, 29, 22);
+  --teal:#3A9E9F;
+  --lavender:#9B75B7;
 }
 * {
   box-sizing: border-box;
@@ -68,22 +70,34 @@ body {
   margin-top: 6rem;
   font-family: "Playfair Display";
 }
-.intro {
-  font-size: 2.5rem;
+.intro{
+  font-size: 3rem;
   font-weight: 400;
+  color:var(--emerald-green);
+}
+#professional-title  {
+  font-size: 3rem;
+  font-weight: 400;
+  font-family: "Playfair Display";
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  color:var(--teal);
 }
 .full-name {
-  font-size: 5rem;
-  color: var(--vibrant-orange);
+  font-size: 6rem;
+  color: var(--lavender);
   font-weight: 600;
-  margin: 1rem 0 2rem 0;
+  margin-top: 1rem;
 }
-#last-name,
-.intro {
+#last-name{
   color: var(--emerald-green);
 }
+#last-name,
+.intro, #professional-title {
+  text-align: center;
+}
 .icon-links {
-  width: 40vw;
+  width: 20vw;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -143,6 +157,9 @@ body {
     background: url("https://media1.giphy.com/media/JoVV55m3KZHdxlpFZ6/200w.gif?cid=6c09b952zwazue37lbpkqanfclwudongt90xsi2fzr5rpm7s&ep=v1_gifs_search&rid=200w.gif&ct=g")
       repeat;
     padding:20px;
+  }
+  .icon-links{
+    width:40vw;
   }
   .intro{
     font-size: 2.8rem;
