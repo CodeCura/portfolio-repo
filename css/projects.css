@@ -56,6 +56,7 @@
   #projects-page-header {
     font-size: 6rem;
     margin: 3rem auto;
+    font-family: "Playfair Display";
   }
   #projects-list {
     width: 100vw;
@@ -82,14 +83,35 @@
   }
   
   @media (max-width: 800px) {
+    html {
+      background: url("https://media1.giphy.com/media/JoVV55m3KZHdxlpFZ6/200w.gif?cid=6c09b952zwazue37lbpkqanfclwudongt90xsi2fzr5rpm7s&ep=v1_gifs_search&rid=200w.gif&ct=g")
+        repeat;
+      padding:20px;
+    }
+    body{
+      padding-top: 8px;
+      background-color: var(--light-grey);
+    }
+    #projects-page{
+      overflow: scroll;
+      padding-bottom: 20px;
+    }
+    .projects-list-item{
+      width: 65vw !important;
+    }
     #nav-bar{
       margin-top:4rem;
+    }
+    .nav-link{
+      font-size: 2rem;
+      font-weight: 600;
     }
     #projects-list {
       flex-direction: column;
     }
     .projects-list-item {
       width: 100%;
+      
     }
   }
   

@@ -145,11 +145,19 @@ margin-left:3px;
     justify-content: space-around;
     padding: 2rem 2rem 5rem 2rem;
   }
+  #nav-bar{
+    margin-top:1rem;
+  }
   .nav-link {
     font-size: 1.3rem;
+    font-weight:600;
+  }
+  .nav-link:hover{
+    font-size:1.4rem;
   }
   #homepage-header{
-    margin-top:9vh;
+    margin-top:4.5vh;
+    margin-bottom: 2vh;
   }
   #portfolio-header,
   #homepage-subheader * {

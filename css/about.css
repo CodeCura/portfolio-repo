@@ -66,6 +66,7 @@ body {
   font-weight: normal;
   text-align: center;
   margin-top: 6rem;
+  font-family: "Playfair Display";
 }
 .intro {
   font-size: 2.5rem;
@@ -75,7 +76,7 @@ body {
   font-size: 5rem;
   color: var(--vibrant-orange);
   font-weight: 600;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 #last-name,
 .intro {
@@ -87,7 +88,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   margin-bottom: 2rem;
 }
 .icon-link {
@@ -138,6 +139,14 @@ body {
 }
 
 @media (max-width: 800px) {
+  html {
+    background: url("https://media1.giphy.com/media/JoVV55m3KZHdxlpFZ6/200w.gif?cid=6c09b952zwazue37lbpkqanfclwudongt90xsi2fzr5rpm7s&ep=v1_gifs_search&rid=200w.gif&ct=g")
+      repeat;
+    padding:20px;
+  }
+  body{
+    padding-top: 8px;
+  }
   .paragraph {
     font-size: 1.5rem;
   }
