@@ -82,7 +82,7 @@ body {
   margin-bottom:3rem;
 }
 
-@media (max-width: 2000px) {
+@media (max-width: 800px) {
   html {
     background: url("https://media1.giphy.com/media/JoVV55m3KZHdxlpFZ6/200w.gif?cid=6c09b952zwazue37lbpkqanfclwudongt90xsi2fzr5rpm7s&ep=v1_gifs_search&rid=200w.gif&ct=g")
       repeat;
@@ -96,10 +96,13 @@ body {
     overflow: scroll;
     padding-bottom: 20px;
   }
-  
+  #projects-list{
+    margin: 0 auto;
+
+  }
   .projects-list-item{
     width: 80vw;
-    margin: 1rem auto;
+    margin: 1rem 0 1rem -2rem;
   }
   #nav-bar{
     margin-top:4rem;
