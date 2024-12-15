@@ -130,7 +130,7 @@ color:white;
 margin-left:3px;
 }
 /* Responsive */
-@media (max-width: 800px) {
+@media (max-width: 500px) {
   #homepage {
     background: url("https://media1.giphy.com/media/JoVV55m3KZHdxlpFZ6/200w.gif?cid=6c09b952zwazue37lbpkqanfclwudongt90xsi2fzr5rpm7s&ep=v1_gifs_search&rid=200w.gif&ct=g")
       repeat;
@@ -147,16 +147,12 @@ margin-left:3px;
   #nav-bar{
     margin-top:0.8rem;
   }
-  .nav-link {
-    font-size: 1.3rem;
-    font-weight:600;
-  }
+  
   .nav-link:hover{
     font-size:1.4rem;
   }
   #homepage-header{
-    margin-top:4.5vh;
-    margin-bottom: 1rem;
+    margin-top:4vh;
   }
   #portfolio-header,
   #homepage-subheader * {

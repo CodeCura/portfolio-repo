@@ -82,7 +82,7 @@ body {
   margin-bottom:3rem;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 500px) {
   html {
     background: url("https://media1.giphy.com/media/JoVV55m3KZHdxlpFZ6/200w.gif?cid=6c09b952zwazue37lbpkqanfclwudongt90xsi2fzr5rpm7s&ep=v1_gifs_search&rid=200w.gif&ct=g")
       repeat;
