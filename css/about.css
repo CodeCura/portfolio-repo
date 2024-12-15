@@ -156,10 +156,20 @@ body {
   html {
     background: url("https://media1.giphy.com/media/JoVV55m3KZHdxlpFZ6/200w.gif?cid=6c09b952zwazue37lbpkqanfclwudongt90xsi2fzr5rpm7s&ep=v1_gifs_search&rid=200w.gif&ct=g")
       repeat;
-    padding:20px;
+    padding:15px;
+  }
+  #nav-bar{
+    margin-left: 10px;
+    margin-right: 10px;
   }
   .icon-links{
     width:40vw;
+  }
+  .about-me {
+    padding:0;
+  }
+  main{
+    padding:2px;
   }
   .intro{
     font-size: 2.8rem;

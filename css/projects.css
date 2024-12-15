@@ -1,113 +1,107 @@
 :root {
-    --soft-blue: #007bff;
-    --coder-pink: #ff69b4;
-    --deep-blue: #003366;
-    --emerald-green: #2e8b57;
-    --vibrant-orange: #ffa500;
-    --light-grey: #efe8e8;
-    --dark-grey: #333333;
-    --light-red: rgba(130, 29, 22, 0.9);
-    --dark-red: rgb(130, 29, 22);
-  }
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+  --soft-blue: #007bff;
+  --coder-pink: #ff69b4;
+  --deep-blue: #003366;
+  --emerald-green: #2e8b57;
+  --vibrant-orange: #ffa500;
+  --light-grey: #efe8e8;
+  --dark-grey: #333333;
+  --light-red: rgba(130, 29, 22, 0.9);
+  --dark-red: rgb(130, 29, 22);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat";
+}
+body {
+  background-color: var(--light-grey);
+}
+#projects-page {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+#nav-bar {
+  display: block;
+  margin: 3rem auto;
+}
+#nav-list {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+}
+.nav-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.7rem;
+}
+.nav-link:hover {
+  font-weight: 700;
+  cursor: pointer;
+}
+.nav-link, .nav-link:hover, .nav-link:visited, .nav-link:active {
+  color: black;
+}
+#nav-list li {
+  list-style-type: none;
+}
+#projects-page-header {
+  font-size: 6rem;
+  margin: 3rem auto;
+  font-family: "Playfair Display";
+}
+#projects-list {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 2rem 5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.projects-list-item {
+  width: 47%;
+  display: inline-block;
+  list-style-type: none;
+  background-color: var(--dark-grey);
+  border: 2px solid black;
+  margin-bottom: 20px;
+}
+.project-link{
+  text-decoration: none;
+  color:white;
+  font-size:2rem;
+  margin-bottom:3rem;
+}
+
+@media (max-width: 2000px) {
   html {
-    font-size: 62.5%;
-    font-family: "Montserrat";
+    background: url("https://media1.giphy.com/media/JoVV55m3KZHdxlpFZ6/200w.gif?cid=6c09b952zwazue37lbpkqanfclwudongt90xsi2fzr5rpm7s&ep=v1_gifs_search&rid=200w.gif&ct=g")
+      repeat;
+    padding:20px;
   }
-  body {
+  body{
+    padding-top: 8px;
     background-color: var(--light-grey);
   }
-  #projects-page {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-    text-align: center;
-  }
-  #nav-bar {
-    display: block;
-    margin: 3rem auto;
-  }
-  #nav-list {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-around;
-  }
-  .nav-link {
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1.7rem;
-  }
-  .nav-link:hover {
-    font-weight: 700;
-    cursor: pointer;
-  }
-  .nav-link, .nav-link:hover, .nav-link:visited, .nav-link:active {
-    color: black;
-  }
-  #nav-list li {
-    list-style-type: none;
-  }
-  #projects-page-header {
-    font-size: 6rem;
-    margin: 3rem auto;
-    font-family: "Playfair Display";
-  }
-  #projects-list {
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 2rem 5rem;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .projects-list-item {
-    width: 47%;
-    display: inline-block;
-    list-style-type: none;
-    background-color: var(--dark-grey);
-    border: 2px solid black;
-    margin-bottom: 20px;
-  }
-  .project-link{
-    text-decoration: none;
-    color:white;
-    font-size:2rem;
-    margin-bottom:3rem;
+  #projects-page{
+    overflow: scroll;
+    padding-bottom: 20px;
   }
   
-  @media (max-width: 800px) {
-    html {
-      background: url("https://media1.giphy.com/media/JoVV55m3KZHdxlpFZ6/200w.gif?cid=6c09b952zwazue37lbpkqanfclwudongt90xsi2fzr5rpm7s&ep=v1_gifs_search&rid=200w.gif&ct=g")
-        repeat;
-      padding:20px;
-    }
-    body{
-      padding-top: 8px;
-      background-color: var(--light-grey);
-    }
-    #projects-page{
-      overflow: scroll;
-      padding-bottom: 20px;
-    }
-    .projects-list-item{
-      width: 65vw !important;
-    }
-    #nav-bar{
-      margin-top:4rem;
-    }
-    #projects-list {
-      flex-direction: column;
-    }
-    .projects-list-item {
-      width: 100%;
-      
-    }
+  .projects-list-item{
+    width: 80vw;
+    margin: 1rem auto;
   }
-  
+  #nav-bar{
+    margin-top:4rem;
+  }
+}
