@@ -152,7 +152,7 @@ body {
   text-align: center;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   html {
     background: url("https://media1.giphy.com/media/JoVV55m3KZHdxlpFZ6/200w.gif?cid=6c09b952zwazue37lbpkqanfclwudongt90xsi2fzr5rpm7s&ep=v1_gifs_search&rid=200w.gif&ct=g")
       repeat;
@@ -185,5 +185,6 @@ body {
   }
   .bottom-links .icon-link{
     font-size: 3rem;
+    margin:4px;
   }
 }
