@@ -65,6 +65,7 @@
     flex-direction: row;
     width: 100vw;
     height: 100vh;
+    padding:0 20px 40px 20px;
   }
   #walk-page-left {
     padding: 20px;
@@ -136,6 +137,7 @@
       flex-direction: column;
       width:90vw;
       margin: 0 auto;
+      padding:0;
     }
     #walk-page-left,
     #walk-page-right {
