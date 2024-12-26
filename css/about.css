@@ -80,7 +80,7 @@ body {
   font-weight: 500;
   margin-top: 1rem;
   margin-bottom: 3rem;
-  color:var(--teal);
+  color:var(--emerald-green);
 }
 .full-name {
   font-size: 6rem;
@@ -113,6 +113,7 @@ body {
 }
 .top-links {
   font-size: 3rem;
+  margin-bottom: 6rem;
 }
 .top-links .icon-link:hover {
   color: var(--vibrant-orange);
@@ -135,12 +136,13 @@ body {
 .paragraph-header {
   font-size: 3rem;
   font-weight: 600;
-  text-align: center;
+  text-align: left;
   margin: 3rem 0 1rem 0;
-  color:var(--emerald-green);
+  color:var(--teal);
 }
-#chat, #unique{
-  color:var(--vibrant-orange);
+#chat,
+#unique {
+  color: var(--vibrant-orange);
 }
 .paragraph-subheader {
   display:inline-block;
@@ -152,7 +154,7 @@ body {
   text-align: center;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   html {
     background: url("https://media1.giphy.com/media/JoVV55m3KZHdxlpFZ6/200w.gif?cid=6c09b952zwazue37lbpkqanfclwudongt90xsi2fzr5rpm7s&ep=v1_gifs_search&rid=200w.gif&ct=g")
       repeat;
