@@ -113,6 +113,7 @@ body {
   .projects-list-item{
     display: block;
     width: 100%;
+    padding:2rem 1rem;
     margin: 1rem auto;
   }
   #nav-bar{
