@@ -111,7 +111,8 @@ body {
     width: 100%;
   }
   .projects-list-item{
-    width: 90vw;
+    display: block;
+    width: 100%;
     margin: 1rem auto;
   }
   #nav-bar{
