@@ -59,6 +59,7 @@ body {
   margin: 3rem auto;
   font-family: "Playfair Display";
   color:var(--deep-blue);
+  font-weight: 400;
 }
 #projects-subheader {
   font-size: 2rem;
