@@ -137,11 +137,14 @@
     body {
       padding-top: 8px;
     }
+    .section-header {
+      font-size: 2rem;;
+    }
     .paragraph {
       font-size: 1.6rem;
     }
     .paragraph-subheader {
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
   }
   
